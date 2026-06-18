@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Final Exam - Score Reveal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #ffffff;
+        }
+
+        .reveal-container {
+            background: rgba(30, 41, 59, 0.85);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            color: #38bdf8;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .header h2 {
+            font-size: 1.8rem;
+            color: #f8fafc;
+            margin-bottom: 30px;
+        }
+
+        .score-display {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .score-display p {
+            font-size: 1.1rem;
+            color: #93c5fd;
+            margin-bottom: 10px;
+        }
+
+        .score-value {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .score-value span {
+            font-size: 2rem;
+            color: #93c5fd;
+        }
+
+        .breakdown-box {
+            background: rgba(15, 23, 42, 0.6);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .breakdown-box h3 {
+            font-size: 1.2rem;
+            color: #34d399;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 10px;
+        }
+
+        .breakdown-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="reveal-container">
+        <div class="header">
+            <h1>HTML Course Final Exam</h1>
+            <h2>Forsythe III F. Falken</h2>
+        </div>
+
+        <div class="score-display">
+            <p>FINAL SCORE</p>
+            <div class="score-value">146<span>/150</span></div>
+        </div>
+
+        <div class="breakdown-box">
+            <h3>Exam Breakdown</h3>
+            <div class="breakdown-item">
+                <span>Theoretical Section</span>
+                <span>30 / 30</span>
+            </div>
+            <div class="breakdown-item">
+                <span>Syntax & Document Structure</span>
+                <span>30 / 30</span>
+            </div>
+            <div class="breakdown-item">
+                <span>Semantic Markup</span>
+                <span>41 / 45</span>
+            </div>
+            <div class="breakdown-item">
+                <span>Practical Coding Implementation</span>
+                <span>45 / 45</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
